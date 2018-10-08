@@ -1,0 +1,37 @@
+theme: yilia
+title: Blog of Saul
+author: Saul
+language: zh-CN
+timezone: Asia/Shanghai
+
+date_format: YYYY-MM-DD
+
+time_format: HH:mm:ss
+
+# Pagination #分页
+per_page: 5 #每页文章数, 设置成 0 禁用分页
+pagination_dir: page
+
+jsonContent:
+    meta: false
+    pages: false
+    posts:
+      title: true
+      date: true
+      path: true
+      text: false
+      raw: false
+      content: false
+      slug: false
+      updated: false
+      comments: false
+      link: false
+      permalink: false
+      excerpt: false
+      categories: false
+      tags: true
+
+deploy:
+ type: git
+ repository: git@github.com:EternalSaul/EternalSaul.github.io.git
+ branch: master
